@@ -12,7 +12,7 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Cliente c1 = new Cliente(0, "Renan", "(71)99633-3313");
+        Cliente c1 = new Cliente("Renan", "(71)99633-3313","10/08/1993");
         
         Servico s1 = new Servico(0, "Design de Sobrancelhas com Henna", 45, 45, 1);
         

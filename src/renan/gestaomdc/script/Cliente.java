@@ -4,6 +4,9 @@
  */
 package renan.gestaomdc.script;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  *
  * @author Acer
@@ -13,14 +16,15 @@ public class Cliente {
     private int id;
     private String nome;
     private String telefone;
+    private String dataAniversario;
 
     public Cliente() {
     }
 
-    public Cliente(int id, String nome, String telefone) {
-        this.id = id;
+    public Cliente(String nome, String telefone, String aniversario) {
         this.nome = nome;
         this.telefone = telefone;
+        this.dataAniversario = aniversario;
     }
 
     public int getId() {
@@ -47,9 +51,17 @@ public class Cliente {
         this.telefone = telefone;
     }
 
+    public String getDataAniversario() {
+        return dataAniversario;
+    }
+
+    public void setDataAniversario(String dataAniversario) {
+        this.dataAniversario = dataAniversario;
+    }
+    
     @Override
     public String toString() {
-        return "Cliente{" + "id: " + id + ", nome: " + nome + ", telefone: " + telefone + '}';
+        return "Cliente{ nome: " + nome + ", telefone: " + telefone + ", nascimento: " + dataAniversario +'}';
     }
     
     
